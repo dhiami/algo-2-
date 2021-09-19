@@ -1,0 +1,24 @@
+ALGORITHM algo_2
+VAR
+    C : CHAR := '';
+    nbw : INTEGER := 0;
+    nbc : INTEGER := 0;
+    nbv : INTEGER := 0;
+BEGIN
+WHILE (C <> '.') DO
+    Read(c);
+        nbc := nbc +1;
+    IF (C = 'a' OR C='e' OR C='i' OR C='o' OR C='u' OR C='y') THEN
+            nbv := nbv +1;
+    END_IF
+
+    IF (C=' ') THEN
+            nbw := nbw +1;
+    END_IF
+        
+END_WHILE
+
+    Write("The length sentence is ", nbc);
+    Write("The number of words sentence is ", nbw);
+    Write("he number of vowels  sentence. is ", nbv);
+END algo_2
